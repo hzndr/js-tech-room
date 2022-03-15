@@ -1,0 +1,52 @@
+.onboarding {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $primary;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  transition: opacity 1s 0s;
+  &__content {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 0px 0px (0, 0, 0, 0.25);
+  }
+  &__text {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+  &__button {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $white;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

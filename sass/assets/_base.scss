@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+a {
+  color: var(--black);
+  font-weight: 600;
+  &:hover,
+  &:hover:visited {
+    color: $secondary;
+  }
+  &:visited {
+    color: $black;
+  }
+}
+
+ul li {
+  padding: 0.25rem 0;
+}
+
+img {
+  width: 1.5rem;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.removed {
+  opacity: 0;
+}

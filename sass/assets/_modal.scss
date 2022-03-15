@@ -1,0 +1,57 @@
+.modal {
+  a {
+    text-underline-offset: 3px;
+  }
+  &-header,
+  &-footer {
+    border: none;
+  }
+
+  &-body {
+    padding: 1rem 2rem;
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &__resources {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+    }
+    &__links {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  &-content {
+    border-radius: 0;
+  }
+
+  &-footer {
+    &__button {
+      background-color: $primary;
+      color: $white;
+      border: 1px solid $primary;
+      padding: 0.5rem 1rem;
+      border-radius: 0;
+      font-weight: 600;
+      transition: all 200ms ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: $white;
+        color: $primary;
+      }
+      &:disabled {
+        opacity: 0.8;
+        cursor: default;
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}

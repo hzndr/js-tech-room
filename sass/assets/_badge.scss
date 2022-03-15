@@ -1,0 +1,40 @@
+.badge {
+  display: flex;
+  align-items: start;
+  padding: 0.6rem 0.6rem;
+  &__delete {
+    float: right;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+    transition: transform 250ms ease-in-out;
+    & .fa-regular.fa-circle-xmark {
+      pointer-events: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__icon-container {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid white;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 250ms ease-in-out;
+    &__icon-container:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__icon {
+    font-size: 2.8rem;
+    color: #454545;
+  }
+}

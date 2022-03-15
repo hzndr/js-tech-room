@@ -1,0 +1,47 @@
+.svg {
+  width: auto;
+  height: 100vh;
+  margin: 0 auto;
+  &-container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    &:after {
+      content: "";
+      background: radial-gradient(
+        50% 119.36% at 50% 57.58%,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(62, 69, 93, 0) 70.83%,
+        #3e455d 88.54%
+      );
+      background: radial-gradient(
+        50% 119.36% at 50% 57.58%,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(62, 69, 93, 0) 67.19%,
+        #3e455d 92.19%
+      );
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      pointer-events: none;
+    }
+  }
+  &__item {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    background: linear-gradient(
+      0deg,
+      rgba(140, 106, 87, 1) 49%,
+      rgba(95, 93, 97, 1) 50%,
+      rgba(62, 69, 93, 1) 50%,
+      rgba(62, 69, 93, 1) 100%
+    );
+  }
+}
