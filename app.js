@@ -103,7 +103,6 @@ class UI {
         collectedBadges = [...collectedBadges, badge];
         Storage.saveBadges(collectedBadges);
         this.setCollectedItemsValue(collectedBadges);
-        this.checkIfFinished();
         this.addBadge(badge);
         this.showBadges();
       });
@@ -134,7 +133,6 @@ class UI {
     this.setCollectedItemsValue(collectedBadges);
     this.populateBadges(collectedBadges);
     this.registerEventListeners();
-    this.checkIfFinished();
   }
   registerEventListeners() {
     let onboardingScreen = document.querySelector(".onboarding");
